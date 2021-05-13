@@ -7,7 +7,6 @@ import accountReducer from './reducers/accountReducer'
 
 import App from './App';
 
-// setup store
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
