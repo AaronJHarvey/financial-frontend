@@ -1,13 +1,15 @@
 import React from 'react'
-import AccountsList from '../components/AccountsList'
-import AccountInput from '../components/AccountInput'
 import {connect} from 'react-redux'
 import {fetchAccounts} from '../actions/fetchAccounts'
+import AccountsList from '../components/AccountsList'
+import AccountInput from '../components/AccountInput'
+
+
 
 class AccountsContainer extends React.Component{
 
   componentDidMount(){
-    fetchAccounts()
+    this.props.fetchAccounts()
   }
 
   render(){
@@ -29,4 +31,4 @@ const mapStateToProps = state => {
 }
 
 
-export default connect(mapStateToProps)(AccountsContainer)
+export default connect(mapStateToProps,{fetchAccounts})(AccountsContainer)
