@@ -17,6 +17,8 @@ class AccountsContainer extends React.Component{
 
       <div>
         <AccountInput/>
+        <br/><br/>
+
         <AccountsList accounts={this.props.accounts}/>
       </div>
 
