@@ -1,8 +1,7 @@
-export default function accountReducer(state={accounts: []}, action){
-  debugger;
+export default function accountReducer(state={ accounts: []}, action){
   switch (action.type){
     case 'FETCH_ACCOUNTS':
-      return state
+      return {accounts: action.payload}
     default:
       return state
   }
