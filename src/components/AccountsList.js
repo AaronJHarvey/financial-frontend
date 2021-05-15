@@ -6,8 +6,8 @@ const AccountsList = (props) =>{
   return(
 
     <div>
-      {props.accounts.map(account=>
-        <div key={account.id}><ShowAccount account={account}/></div>)}
+    {props.accounts.map(account=>
+      <div key={account.id}><ShowAccount account={account}/></div>)}
     </div>
   )
 }
