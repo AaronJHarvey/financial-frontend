@@ -15,7 +15,7 @@ const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 let store = createStore(accountReducer, composeEnhancers(applyMiddleware(thunk)))
 
 ReactDOM.render(
-  <Provider store= {store}>
+  <Provider store={store}>
     <Router>
     <App />
     </Router>
