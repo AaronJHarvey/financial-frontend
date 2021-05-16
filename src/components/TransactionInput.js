@@ -5,7 +5,7 @@ import {addTransaction} from '../actions/addTransaction'
 class TransactionInput extends React.Component{
 
   state = {
-    kind:'Deposit',
+    kind:'deposit',
     amount:''
   }
 
@@ -19,7 +19,7 @@ class TransactionInput extends React.Component{
     event.preventDefault()
     this.props.addTransaction(this.state, this.props.account.id)
     this.setState({
-      kind:'Deposit',
+      kind:'deposit',
       amount:''
     })
   }
@@ -30,8 +30,8 @@ class TransactionInput extends React.Component{
         <form onSubmit={this.handleSubmit}>
           <label>Transaction Type:</label>
           <select name='kind' value={this.state.kind} onChange={this.handleChange}>
-            <option>Deposit</option>
-            <option>Withdraw</option>
+            <option>deposit</option>
+            <option>withdraw</option>
           </select>
           <br/>
           <label>Transaction Amount:</label>
