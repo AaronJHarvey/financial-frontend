@@ -13,7 +13,7 @@ const Transactions = (props) => {
 
     <div>
       {props.transactions && props.transactions.map(transaction=>
-        <li key={transaction.id}> {transaction.kind} - {transaction.amount} <button onClick={() => handleDelete(transaction)}>Delete</button>
+        <li key={transaction.id}> {transaction.kind} - ${transaction.amount} <button onClick={() => handleDelete(transaction)}>Delete</button>
         </li>
       )}
     </div>
