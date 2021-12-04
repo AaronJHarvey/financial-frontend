@@ -29,7 +29,6 @@ class AccountsContainer extends React.Component{
           <Route exact path='/accounts' render={(routerProps)=><Accounts {...routerProps} accounts={this.props.accounts}/>}/>
         </Switch>
       </div>
-
     )
   }
 }
@@ -42,3 +41,8 @@ const mapStateToProps = state => {
 
 
 export default connect(mapStateToProps,{fetchAccounts})(AccountsContainer)
+
+
+// client side routes
+// redirect user with account made
+// connect provider mapStateToProps
