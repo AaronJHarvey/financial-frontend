@@ -40,7 +40,7 @@ const mapStateToProps = state => {
 }
 
 
-export default connect(mapStateToProps,{fetchAccounts})(AccountsContainer)
+export default connect(mapStateToProps, {fetchAccounts})(AccountsContainer)
 
 
 // client side routes
