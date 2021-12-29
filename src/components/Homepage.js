@@ -3,6 +3,7 @@ import {Route,Link} from 'react-router-dom'
 
 
 
+
 const Homepage = () =>{
 
   return(
@@ -16,6 +17,7 @@ const Homepage = () =>{
     <br/>
     To Add an Account<Link to='/accounts/new'> Click Here</Link>
     </h2>
+
   )
 }
 

@@ -38,7 +38,6 @@ class AccountInput extends React.Component{
           <br/>
           <input type="submit"/>
         </form>
-
       </div>
     )
   }

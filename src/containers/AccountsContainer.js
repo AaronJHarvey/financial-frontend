@@ -10,11 +10,18 @@ import Homepage from '../components/Homepage'
 
 
 
+
 class AccountsContainer extends React.Component{
+  state = {
+    searchTerm: '',
+    filteredAccounts: []
+  }
 
   componentDidMount(){
     this.props.fetchAccounts()
   }
+
+
 
   render(){
     return(
@@ -22,6 +29,9 @@ class AccountsContainer extends React.Component{
       <div>
       <HeaderToNavigate/>
       <br/><br/><br/>
+
+
+
         <Switch>
           <Route exact path='/accounts/new' component={AccountInput}/>
           <Route exact path='/accounts/:id' render={(routerProps) => <Account {...routerProps} accounts={this.props.accounts} />}/>
