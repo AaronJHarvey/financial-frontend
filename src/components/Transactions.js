@@ -1,6 +1,9 @@
 import React from 'react'
 import {connect} from 'react-redux'
 import {deleteTransaction} from '../actions/deleteTransaction'
+import 'bootstrap/dist/css/bootstrap.min.css'
+import {Button} from 'react-bootstrap'
+
 
 const Transactions = (props) => {
 
@@ -12,7 +15,7 @@ const Transactions = (props) => {
 
     <div>
       {props.transactions && props.transactions.map(transaction=>
-        <li key={transaction.id}> {transaction.kind} - ${transaction.amount} <button onClick={() => handleDelete(transaction)}>Delete</button>
+        <li key={transaction.id}> {transaction.kind} - ${transaction.amount} <Button onClick={() => handleDelete(transaction)}>Delete</Button>
         </li>
       )}
     </div>

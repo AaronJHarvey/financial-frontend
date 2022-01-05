@@ -13,9 +13,9 @@ const Homepage = () =>{
     <br/>
     <br/>
 
-    To see All Your Accounts <Link to='/accounts'>Click Here </Link>
+    To see All Your Accounts <button><Link to='/accounts'>Click Here </Link></button>
     <br/>
-    To Add an Account<Link to='/accounts/new'> Click Here</Link>
+    To Add an Account<button><Link to='/accounts/new'> Click Here</Link></button>
     </h2>
 
   )

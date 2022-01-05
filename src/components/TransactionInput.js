@@ -1,6 +1,8 @@
 import React from 'react'
 import {connect} from 'react-redux'
 import {addTransaction} from '../actions/addTransaction'
+import 'bootstrap/dist/css/bootstrap.min.css'
+import {Button,Alert} from 'react-bootstrap'
 
 class TransactionInput extends React.Component{
 
@@ -35,8 +37,8 @@ class TransactionInput extends React.Component{
           </select>
           <br/>
           <label>Transaction Amount:</label>
-          <input type='text' name='amount' value={this.state.amount} onChange={this.handleChange}/>
-          <input type='submit'/>
+          <input type='text' name='amount' value={this.state.amount} placeholder='Enter Amount' onChange={this.handleChange}/>
+          <Button type="submit">Submit</Button>
         </form>
       </div>
     )
