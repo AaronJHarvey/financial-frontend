@@ -1,6 +1,8 @@
 import React from 'react'
 import {Redirect} from 'react-router-dom'
 import TransactionsContainer from '../containers/TransactionsContainer'
+import TransferForm from './TransferForm'
+
 
 const Account = (props) => {
 
@@ -15,6 +17,7 @@ return(
         {account ? account.name : null} - ${account ? account.balance : null}
       </h2>
     <TransactionsContainer account={account}/>
+    <TransferForm/>
   </div>
 )
 
